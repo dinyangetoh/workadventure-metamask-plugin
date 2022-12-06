@@ -22,23 +22,9 @@ WA.onInit().then(() => {
         currentPopup = WA.ui.openPopup("clockPopup","It's " + time,[]);
     })
 
+    console.log("Install metamask now", window)
 
 
-    const initialize = ()=>{
-        //Created check function to see if the MetaMask extension is installed
-        const isMetaMaskInstalled = () => {
-            //Have to check the ethereum binding on the window object to see if it's installed
-            const { ethereum } = window;
-            return Boolean(ethereum && ethereum.isMetaMask);
-        };
-
-        if(isMetaMaskInstalled()){
-            console.log("Metamask is installed", window)
-        }else{
-            console.log("Install metamask now", window)
-        }
-    }
-    window.addEventListener('DOMContentLoaded', initialize);
     WA.room.onLeaveLayer('clockZone').subscribe(closePopup)
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
