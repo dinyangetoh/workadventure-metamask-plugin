@@ -5,11 +5,6 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 console.log('Script started successfully');
 
 let currentPopup: any = undefined;
-declare global {
-    interface Window {
-        ethereum: any
-    }
-}
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
@@ -21,7 +16,6 @@ WA.onInit().then(() => {
         const time = today.getHours() + ":" + today.getMinutes();
         currentPopup = WA.ui.openPopup("clockPopup","It's " + time,[]);
     })
-
     console.log("Install metamask now", window)
 
 

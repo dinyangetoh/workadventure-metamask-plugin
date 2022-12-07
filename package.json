@@ -15,6 +15,7 @@
     "wa-map-optimizer-vite": "^1.1.5"
   },
   "dependencies": {
+    "@metamask/onboarding": "^1.0.1",
     "@workadventure/iframe-api-typings": "^1.12.10",
     "@workadventure/scripting-api-extra": "^1.4.4"
   }

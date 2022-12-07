@@ -21,7 +21,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "esModuleInterop": true,
     "noEmit": true,
     "noUnusedLocals": true,
